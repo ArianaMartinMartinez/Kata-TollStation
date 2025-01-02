@@ -17,6 +17,6 @@ class Station extends Model
     ];
 
     public function tolls(): HasMany {
-        return $this->hasMany(Stations_Vehicles::class);
+        return $this->hasMany(Stations_Vehicles::class, 'id_station');
     }
 }

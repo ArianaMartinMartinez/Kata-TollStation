@@ -18,10 +18,10 @@ class Vehicle extends Model
     ];
 
     public function type(): BelongsTo {
-        return $this->belongsTo(Type::class);
+        return $this->belongsTo(Type::class, 'id_type');
     }
 
     public function tolls(): HasMany {
-        return $this->hasMany(Stations_Vehicles::class);
+        return $this->hasMany(Stations_Vehicles::class, 'id_vehicle');
     }
 }
