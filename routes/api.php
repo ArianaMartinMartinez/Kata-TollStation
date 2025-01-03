@@ -13,3 +13,6 @@ Route::delete('/vehicles/{id}', [VehicleController::class, 'destroy'])->name('ap
 
 Route::get('/stations', [StationController::class, 'index'])->name('apiHomeStations');
 Route::get('/stations/{id}', [StationController::class, 'show'])->name('apiShowStation');
+Route::post('/stations', [StationController::class, 'store'])->name('apiStoreStation');
+Route::put('/stations/{id}', [StationController::class, 'update'])->name('apiUpdateStation');
+Route::post('/stations/{id}', [StationController::class, 'destroy'])->name('apiDestroyStation');
