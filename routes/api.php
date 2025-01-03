@@ -15,4 +15,4 @@ Route::get('/stations', [StationController::class, 'index'])->name('apiHomeStati
 Route::get('/stations/{id}', [StationController::class, 'show'])->name('apiShowStation');
 Route::post('/stations', [StationController::class, 'store'])->name('apiStoreStation');
 Route::put('/stations/{id}', [StationController::class, 'update'])->name('apiUpdateStation');
-Route::post('/stations/{id}', [StationController::class, 'destroy'])->name('apiDestroyStation');
+Route::delete('/stations/{id}', [StationController::class, 'destroy'])->name('apiDestroyStation');
