@@ -33,7 +33,7 @@ class VehicleController extends Controller
 
         if($validator->fails()) {
             return response()->json([
-                'message' => 'Los datos introducidos no son correctos',
+                'message' => 'Introduced data is not correct',
                 'errors' => $validator->errors(),
             ], 400);
         }
@@ -84,7 +84,7 @@ class VehicleController extends Controller
 
         if($validator->fails()) {
             return response()->json([
-                'message' => 'Los datos introducidos no son correctos',
+                'message' => 'Introduced data is not correct',
                 'errors' => $validator->errors(),
             ], 400);
         }
