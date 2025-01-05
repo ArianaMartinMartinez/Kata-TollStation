@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\StationController;
+use App\Http\Controllers\Api\StationVehicleController;
 use App\Http\Controllers\Api\VehicleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -16,3 +17,6 @@ Route::get('/stations/{id}', [StationController::class, 'show'])->name('apiShowS
 Route::post('/stations', [StationController::class, 'store'])->name('apiStoreStation');
 Route::put('/stations/{id}', [StationController::class, 'update'])->name('apiUpdateStation');
 Route::delete('/stations/{id}', [StationController::class, 'destroy'])->name('apiDestroyStation');
+
+Route::get('/pivot', [StationVehicleController::class, 'index'])->name('apiHomePivot');
+Route::get('/pivot/{id}', [StationVehicleController::class, 'show'])->name('apiShowPivot');
