@@ -49,7 +49,7 @@ class StationTest extends TestCase
             ->assertJsonFragment($data);
     }
 
-    public function test_CheckIfCreateReturnErrorIfBadRequestWithApi() {
+    public function test_CheckIfStationCreateReturnErrorIfBadRequestWithApi() {
         $response = $this->post(route('apiStoreStation'), [
             'city' => 'Cuidad de ejemplo',
             'total_collected' => '200',
@@ -88,7 +88,7 @@ class StationTest extends TestCase
             ->assertJsonFragment($data);
     }
 
-    public function test_CheckIfUpdateReturnErrorIfBadRequestWithApi() {
+    public function test_CheckIfStationUpdateReturnErrorIfBadRequestWithApi() {
         $response = $this->post(route('apiStoreStation'), [
             'name' => 'Nombre de ejemplo',
             'city' => 'Cuidad de ejemplo',

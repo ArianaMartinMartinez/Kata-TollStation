@@ -54,7 +54,7 @@ class VehicleTest extends TestCase
             ->assertJsonFragment($data);
     }
 
-    public function test_CheckIfReturnErrorIfBadRequestWithApi() {
+    public function test_CheckIfVehicleCreateReturnErrorIfBadRequestWithApi() {
         $types = Type::factory(3)->create();
         
         $response = $this->post(route('apiStoreVehicle'), [
@@ -68,7 +68,7 @@ class VehicleTest extends TestCase
             ->assertJsonFragment($data);
     }
 
-    public function test_CheckIfReturnErrorIfTruckHasNullAxlesWithApi() {
+    public function test_CheckIfVehicleCreateReturnErrorIfTruckHasNullAxlesWithApi() {
         $types = Type::factory(3)->create();
         
         $response = $this->post(route('apiStoreVehicle'), [
@@ -112,7 +112,7 @@ class VehicleTest extends TestCase
             ->assertJsonFragment($data);
     }
 
-    public function test_CheckIfUpdateReturnErrorIfBadRequestWithApi() {
+    public function test_CheckIfVehicleUpdateReturnErrorIfBadRequestWithApi() {
         $types = Type::factory(3)->create();
 
         $response = $this->post(route('apiStoreVehicle'), [
@@ -140,7 +140,7 @@ class VehicleTest extends TestCase
                 ->assertJsonFragment($data);
     }
 
-    public function test_CheckIfUpdateReturnErrorIfTruckHasNullAxlesWithApi() {
+    public function test_CheckIfVehicleUpdateReturnErrorIfTruckHasNullAxlesWithApi() {
         $types = Type::factory(3)->create();
 
         $response = $this->post(route('apiStoreVehicle'), [
