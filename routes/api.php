@@ -18,5 +18,8 @@ Route::post('/stations', [StationController::class, 'store'])->name('apiStoreSta
 Route::put('/stations/{id}', [StationController::class, 'update'])->name('apiUpdateStation');
 Route::delete('/stations/{id}', [StationController::class, 'destroy'])->name('apiDestroyStation');
 
-Route::get('/pivot', [StationVehicleController::class, 'index'])->name('apiHomePivot');
-Route::get('/pivot/{id}', [StationVehicleController::class, 'show'])->name('apiShowPivot');
+Route::get('/tolls', [StationVehicleController::class, 'index'])->name('apiHomeTolls');
+Route::get('/tolls/{id}', [StationVehicleController::class, 'show'])->name('apiShowToll');
+Route::post('/tolls', [StationVehicleController::class, 'store'])->name('apiStoreToll');
+Route::put('/tolls/{id}', [StationVehicleController::class, 'update'])->name('apiUpdateToll');
+Route::delete('/tolls/{id}', [StationVehicleController::class, 'destroy'])->name('apiDestroyToll');
