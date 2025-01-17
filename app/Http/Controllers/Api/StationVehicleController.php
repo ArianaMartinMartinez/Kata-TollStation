@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Station;
 use App\Models\Stations_Vehicles;
 use App\Models\Vehicle;
 use Illuminate\Http\Request;
@@ -56,6 +57,12 @@ class StationVehicleController extends Controller
 
         $toll->save();
 
+        $station = Station::findOrFail($validated['id_station']);
+        $station->update([
+            'total_collected' => $station->total_collected + $amount,
+        ]);
+        $station->save();
+
         $fullToll = Stations_Vehicles::with('station', 'vehicle')->findOrFail($toll->id);
 
         return response()->json($fullToll, 201);
@@ -108,6 +115,12 @@ class StationVehicleController extends Controller
         ]);
 
         $toll->save();
+
+        $station = Station::findOrFail($validated['id_station']);
+        $station->update([
+            'total_collected' => $station->total_collected + $amount,
+        ]);
+        $station->save();
 
         $fullToll = Stations_Vehicles::with('station', 'vehicle')->findOrFail($toll->id);
 
