@@ -1,0 +1,31 @@
+footer {
+    background-color: var(--blue);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    transition: transform 0.5s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
