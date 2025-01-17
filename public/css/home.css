@@ -1,0 +1,26 @@
+.homeSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.homeSection a {
+    color: var(--black);
+}
+
+.homeSection a:hover {
+    color: var(--lightBlue);
+}
+
+.homeSection img{
+    height: 17rem;
+    transition: transform 1.5s ease;
+
+}
+
+.homeSection img:hover {
+    transform: scale(1.1);
+}
