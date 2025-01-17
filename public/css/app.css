@@ -2,6 +2,7 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(home.css);
+@import url(lists.css);
 
 
 #app{
@@ -10,6 +11,7 @@
     flex-direction: column;
     font-family: "Funnel Display", sans-serif;
     font-style: normal;
+    background-color: var(--white);
 }
 
 #app a {
@@ -19,6 +21,8 @@
 main{
     flex: 1;
     background-color: var(--white);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 footer{
