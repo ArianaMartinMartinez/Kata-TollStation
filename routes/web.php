@@ -8,3 +8,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/stations', [StationController::class, 'index'])->name('stationsHome');
+Route::get('/stations/{id}', [StationController::class, 'show'])->name('stationsShow');

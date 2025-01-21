@@ -23,6 +23,8 @@ class StationController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $station = Station::with('tolls.vehicle.type')->findOrFail($id);
+
+        return view('stationShow', compact('station'));
     }
 }
