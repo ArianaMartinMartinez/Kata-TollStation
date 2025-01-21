@@ -12,3 +12,4 @@ Route::get('/stations', [StationController::class, 'index'])->name('stationsHome
 Route::get('/stations/{id}', [StationController::class, 'show'])->name('stationsShow');
 
 Route::get('/vehicles', [VehicleController::class, 'index'])->name('vehiclesHome');
+Route::get('/vehicles/{id}', [VehicleController::class, 'show'])->name('vehiclesShow');

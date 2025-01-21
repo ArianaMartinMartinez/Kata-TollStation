@@ -23,6 +23,8 @@ class VehicleController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $vehicle = Vehicle::with('tolls.station', 'type')->findOrFail($id);
+
+        return view('vehicleShow', compact('vehicle'));
     }
 }
