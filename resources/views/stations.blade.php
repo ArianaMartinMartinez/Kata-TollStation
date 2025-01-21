@@ -15,7 +15,7 @@
                 </div>
                   <p><strong>Total collected:</strong> {{ $station->total_collected }}€</p>
               </div>
-              <a href="#" class="btn btn-details">Details</a>
+              <a href="{{ route('stationsShow', $station->id) }}" class="btn btn-details">Details</a>
             </div>
           </div>
         @endforeach
