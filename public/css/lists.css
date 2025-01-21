@@ -1,0 +1,38 @@
+.btn-details {
+    background-color: var(--darkBlue) !important;
+    color: var(--white) !important;
+}
+
+.btn-details:hover {
+    background-color: var(--blue) !important;
+}
+
+.cardSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.city {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.fa-location-dot {
+    color: var(--darkBlue);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+}

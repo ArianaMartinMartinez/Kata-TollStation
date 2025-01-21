@@ -1,0 +1,11 @@
+.showInfo, .vehicle-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h4 {
+    margin: 1rem !important;
+    margin-bottom: 2rem !important;
+}

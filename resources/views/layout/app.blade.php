@@ -22,5 +22,7 @@
 
             <x-footer />
         </div>
+
+        <script src="https://kit.fontawesome.com/d9cbd3c891.js" crossorigin="anonymous"></script>
     </body>
 </html>
