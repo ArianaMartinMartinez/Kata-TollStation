@@ -22,7 +22,10 @@
                     <div class="card-body">
                     <h5 class="card-title">{{ $toll->vehicle->license }}</h5>
                     <div class="card-text vehicle-info">
-                        <p>{{ ucfirst($toll->vehicle->type->type) }}</p>
+                        <div class="type">
+                            <i class="fa-solid fa-car"></i>
+                            <p>{{ ucfirst($toll->vehicle->type->type) }}</p>
+                        </div>
                         <p><strong>Num of axles:</strong> {{ $toll->vehicle->axles ? $toll->vehicle->axles : 0 }}</p>
                         <p><strong>Amount paid:</strong> {{ $toll->amount }}€</p>
                     </div>

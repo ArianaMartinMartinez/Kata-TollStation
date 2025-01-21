@@ -9,7 +9,7 @@
     <nav>
         <ul>
             <li><a href="{{ route('stationsHome') }}">Stations</a></li>
-            <li><a href="">Vehicles</a></li>
+            <li><a href="{{ route('vehiclesHome') }}">Vehicles</a></li>
         </ul>
     </nav>
 </header>
