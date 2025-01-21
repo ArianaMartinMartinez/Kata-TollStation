@@ -15,7 +15,7 @@
                 </div>
                 <p><strong>Num of axles:</strong> {{ $vehicle->axles ? $vehicle->axles : 0 }}</p>
             </div>
-            <a href="" class="btn btn-details">Details</a>
+            <a href="{{ route('vehiclesShow', $vehicle->id) }}" class="btn btn-details">Details</a>
             </div>
         </div>
         @endforeach

@@ -29,7 +29,7 @@
                         <p><strong>Num of axles:</strong> {{ $toll->vehicle->axles ? $toll->vehicle->axles : 0 }}</p>
                         <p><strong>Amount paid:</strong> {{ $toll->amount }}€</p>
                     </div>
-                    <a href="" class="btn btn-details">Details</a>
+                    <a href="{{ route('vehiclesShow', $toll->vehicle->id) }}" class="btn btn-details">Details</a>
                     </div>
                 </div>
             @endforeach
