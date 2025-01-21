@@ -21,14 +21,14 @@
     justify-content: center;
 }
 
-.city {
+.city, .type {
     display: flex;
     justify-content: start;
     align-items: baseline;
     gap: 10px;
 }
 
-.fa-location-dot {
+.fa-location-dot, .fa-car {
     color: var(--darkBlue);
 }
 
